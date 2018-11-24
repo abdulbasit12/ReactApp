@@ -13,7 +13,7 @@ export default class App extends React.Component {
           </View>
           <View style={gridItem}>
             <Image style={logo} source={require('./assets/imgs/product.png')} />
-            <Text style={proName}>Product Name text</Text>
+            <Text style={proName}>Product Name test</Text>
           </View>
         </View>
       </ScrollView>
