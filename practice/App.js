@@ -5,6 +5,9 @@ import ProductListItem from './src/components/ProductListItem';
 import ProductGridItem from './src/components/ProductGridItem';
 import Header from './src/components/Header';
 import Login from './src/components/Login';
+import ProductDetail from './src/components/ProductDetail';
+import Cart from './src/components/Cart';
+import WishList from './src/components/WishList';
 
 export default class App extends React.Component {
   render() {
@@ -12,7 +15,7 @@ export default class App extends React.Component {
     return (
       <View style={mainView}>
         <ScrollView>
-          <ProductGridItem />
+          <WishList />
         </ScrollView>
       </View>
     );

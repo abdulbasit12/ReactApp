@@ -15,8 +15,8 @@ class Header extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    headerStyle: {height:60,justifyContent:'center',alignItems:'center',backgroundColor:'#444', color:'#fff', marginTop:24},
-    pagename: {color:'#fff', fontSize:20}
+    headerStyle: {height:84,justifyContent:'center',alignItems:'center',backgroundColor:'#444', shadowColor:'#ccc', shadowOffset:{width:0, height:10}, shadowOpacity:0.2},
+    pagename: {color:'#fff', fontSize:20, paddingTop:24}
  });
 
 export default Header;

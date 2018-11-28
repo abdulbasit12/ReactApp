@@ -39,9 +39,9 @@ const styles = StyleSheet.create({
 Gridcontainer: {flex:1, backgroundColor: '#fff', flexDirection:'row', flexWrap:'wrap'},
 gridItem: {borderColor:'#e0e0e0', borderWidth:1, borderLeftWidth:0.5, borderBottomWidth:0.5, borderStyle:'solid', width:'50%', padding:10, justifyContent:'center', alignItems:'center',},
 logo: {height:100, width:100,},
-proName: {marginTop:5, width:'100%', textAlign:'center', fontSize:16},
+proName: {marginTop:5, width:'100%', textAlign:'center', fontSize:16, color:'#ddd444', fontWeight:'bold'},
 action: {width:'100%', paddingTop:10,flexDirection:'row'},
-price: {textAlign:'left', width:'60%'},
+price: {textAlign:'left', width:'60%', color:'#ddd444'},
 icon: {flexDirection:'row', width:'20%', textAlign:'right'}
 });
 
