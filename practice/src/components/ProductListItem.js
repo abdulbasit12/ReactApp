@@ -17,7 +17,7 @@ class ProductListItem extends React.Component {
                         <Text>Product description</Text>
                         <Text style={price}>Rs 800/-</Text>
                         <View style={actions}>
-                            <Text style={icon}>i1</Text>
+                            <Text style={icon}>icon1</Text>
                             <Text style={icon}>i2</Text>
                         </View>
                     </View>

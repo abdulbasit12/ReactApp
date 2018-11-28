@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView } from 're
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from './Header';
-//import { Icon } from 'react-native-elements';
 
 class ProductGridItem extends React.Component {
     render() {
@@ -17,7 +16,7 @@ class ProductGridItem extends React.Component {
                         <Text style={proName}>Product Name</Text>
                         <View style={action}>
                             <Text style={price}>Rs 800/-</Text>
-                            <Text style={icon}><Icon name='rowing' /></Text>
+                            <Text style={icon}>i1</Text>
                             <Text style={icon}>i2</Text>
                         </View>
                     </View>
