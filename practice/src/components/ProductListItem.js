@@ -22,6 +22,20 @@ class ProductListItem extends React.Component {
                         </View>
                     </View>
                 </View>
+                <View style={listItem}>
+                    <View style={displayImg}>
+                        <Image style={productImg} source={require('../../assets/imgs/product.png')} />
+                    </View>
+                    <View style={detail}>
+                        <Text style={proName}>Product Name</Text>
+                        <Text>Product description</Text>
+                        <Text style={price}>Rs 800/-</Text>
+                        <View style={actions}>
+                            <Text style={icon}>i1</Text>
+                            <Text style={icon}>i2</Text>
+                        </View>
+                    </View>
+                </View>
             </View>
         );
     }

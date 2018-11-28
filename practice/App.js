@@ -8,11 +8,11 @@ import Login from './src/components/Login';
 
 export default class App extends React.Component {
   render() {
-    const { mainView, none } = styles;
+    const { mainView } = styles;
     return (
-      <View>
-        <ScrollView contentContainerStyle={{flex:1}}>
-          <Login />
+      <View style={mainView}>
+        <ScrollView>
+          <ProductGridItem />
         </ScrollView>
       </View>
     );
@@ -20,6 +20,6 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  mainView: {flex:1, backgroundColor:'#ff0000'},
+  mainView: {flex:1},
 });
 

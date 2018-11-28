@@ -1,21 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView, Alert } from 'react-native';
+import ProductGridItem from './ProductGridItem';
 
 class Login extends React.Component {
-    render() {
-      return (
-        <ScrollView>
-          <View style={styles.container}>
-            <Image style={styles.logo} source={require('../../assets/imgs/logo.png')} />
-            <TextInput style={styles.textBox} placeholder="Enter User Name"/>
-            <TextInput style={styles.textBox} secureTextEntry={true} placeholder="Enter Password"/>
-            <Text style={styles.btn}>LOG IN</Text>
-            <Text style={styles.forgotPas}>Forgot Password?</Text>
-          </View>
-        </ScrollView>
-      );
-    }
+  render() {
+    return (
+      <ScrollView>
+        <View style={styles.container}>
+          <Image style={styles.logo} source={require('../../assets/imgs/logo.png')} />
+          <TextInput style={styles.textBox} placeholder="Enter User Name"/>
+          <TextInput style={styles.textBox} secureTextEntry={true} placeholder="Enter Password"/>
+          <Text style={styles.btn}>LOG IN</Text>
+          <Text style={styles.forgotPas}>Forgot Password?</Text>
+        </View>
+      </ScrollView>
+    );
   }
+}
   
   const styles = StyleSheet.create({
     container: {flex: 1, backgroundColor: '#444', alignItems: 'center', justifyContent: 'center', padding:20, },
