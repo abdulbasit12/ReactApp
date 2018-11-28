@@ -5,7 +5,6 @@ import ProductGridItem from './ProductGridItem';
 class Login extends React.Component {
   render() {
     return (
-      <ScrollView>
         <View style={styles.container}>
           <Image style={styles.logo} source={require('../../assets/imgs/logo.png')} />
           <TextInput style={styles.textBox} placeholder="Enter User Name"/>
@@ -13,7 +12,6 @@ class Login extends React.Component {
           <Text style={styles.btn}>LOG IN</Text>
           <Text style={styles.forgotPas}>Forgot Password?</Text>
         </View>
-      </ScrollView>
     );
   }
 }

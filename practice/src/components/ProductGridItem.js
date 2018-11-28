@@ -11,7 +11,6 @@ class ProductGridItem extends React.Component {
         return (
             <View>
                 <Header />
-                <ScrollView>
                 <View style={Gridcontainer}>
                     <View style={gridItem}>
                         <Image style={logo} source={require('../../assets/imgs/product.png')} />
@@ -32,7 +31,6 @@ class ProductGridItem extends React.Component {
                         </View>
                     </View>
                 </View>
-            </ScrollView>
             </View>
         );
     }
