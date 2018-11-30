@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, ScrollView } from 'react-native';
 
 class WishList extends React.Component {
     render(){
@@ -7,34 +7,36 @@ class WishList extends React.Component {
         const { listContainer, listItem, productImg, proName, price, detail, displayImg, PlusMinus, remove, btnCart } = styles;
 
         return (
-            <View style={listContainer}>
-                <View style={listItem}>
-                    <View style={displayImg}>
-                        <Image style={productImg} source={require('../../assets/imgs/product.png')} />
-                    </View>
-                    <View style={detail}>
-                        <Text style={proName}>Product Name</Text>
-                        <Text style={price}>Rs 800/-</Text>
-                        <View style={{flexDirection:'row'}}>
-                            <Text style={btnCart}>ADD TO CART</Text>
+            <ScrollView>
+                <View style={listContainer}>
+                    <View style={listItem}>
+                        <View style={displayImg}>
+                            <Image style={productImg} source={require('../../assets/imgs/product.png')} />
                         </View>
-                    </View>
-                    <Text style={[PlusMinus, remove]}>X</Text>
-                </View>
-                <View style={listItem}>
-                    <View style={displayImg}>
-                        <Image style={productImg} source={require('../../assets/imgs/product.png')} />
-                    </View>
-                    <View style={detail}>
-                        <Text style={proName}>Product Name</Text>
-                        <Text style={price}>Rs 450/-</Text>
-                        <View style={{flexDirection:'row'}}>
-                            <Text style={btnCart}>ADD TO CART</Text>
+                        <View style={detail}>
+                            <Text style={proName}>Product Name</Text>
+                            <Text style={price}>Rs 800/-</Text>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={btnCart}>ADD TO CART</Text>
+                            </View>
                         </View>
+                        <Text style={[PlusMinus, remove]}>X</Text>
                     </View>
-                    <Text style={[PlusMinus, remove]}>X</Text>
+                    <View style={listItem}>
+                        <View style={displayImg}>
+                            <Image style={productImg} source={require('../../assets/imgs/product.png')} />
+                        </View>
+                        <View style={detail}>
+                            <Text style={proName}>Product Name</Text>
+                            <Text style={price}>Rs 450/-</Text>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={btnCart}>ADD TO CART</Text>
+                            </View>
+                        </View>
+                        <Text style={[PlusMinus, remove]}>X</Text>
+                    </View>
                 </View>
-            </View>
+            </ScrollView>
 
         );
     }
