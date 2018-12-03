@@ -11,16 +11,18 @@ import WishList from './src/components/WishList';
 import ForgetPassword from './src/components/ForgetPassword';
 import ResetPassword from './src/components/ResetPassword';
 import Register from './src/components/Register';
+import Checkout from './src/components/Checkout';
+import ThankYou from './src/components/ThankYou';
 
 export default class App extends React.Component {
   render() {
     const { mainView } = styles;
     return (
-      <ScrollView contentContainerStyle={{minHeight:'100%'}}>
-        <View style={mainView}>
-          <Register />
-        </View>
-      </ScrollView>
+      <View style={mainView}>
+        <ScrollView contentContainerStyle={{minHeight:'100%', position:'relative'}}>
+          <ThankYou />
+        </ScrollView>
+      </View>
     );
   }
 }

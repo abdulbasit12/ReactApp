@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, CheckBox, ScrollView } from 'react-native';
 
-class Login extends React.Component {
+class Register extends React.Component {
   render() {
     return (
         <View style={styles.container}>
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
     forgotPas: {alignSelf: 'stretch', color:'#4fe5c2', textAlign:'center', marginTop:30, },
 });
 
-export default Login;
+export default Register;
