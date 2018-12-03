@@ -19,7 +19,7 @@ export default class App extends React.Component {
     const { mainView } = styles;
     return (
       <View style={mainView}>
-        <ScrollView contentContainerStyle={{minHeight:'100%', position:'relative'}}>
+        <ScrollView contentContainerStyle={{minHeight:'100%'}}>
           <ThankYou />
         </ScrollView>
       </View>
