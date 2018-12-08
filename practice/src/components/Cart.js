@@ -1,49 +1,51 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, ScrollView } from 'react-native';
 
 class Cart extends React.Component {
     render(){
 
-        const { listContainer, listItem, productImg, proName, price, detail, displayImg, qty, PlusMinus, qtyInput, remove, totalRow, totalItem, alignRight, footer, btnCheckout } = styles;
+        const { listContainer, listItem, productImg, proName, price, detail, displayImg, qty, PlusMinus, qtyInput, remove, totalRow, totalItem, alignRight, footer, btn } = styles;
 
         return (
             <View style={listContainer}>
-                <View style={listItem}>
-                    <View style={displayImg}>
-                        <Image style={productImg} source={require('../../assets/imgs/product.png')} />
-                    </View>
-                    <View style={detail}>
-                        <Text style={proName}>Product Name</Text>
-                        <Text style={price}>Rs 800/-</Text>
-                        <View style={qty}>
-                            <Text style={PlusMinus}>-</Text>
-                            <TextInput style={qtyInput} placeholder="2"></TextInput>
-                            <Text style={PlusMinus}>+</Text>
+                <ScrollView contentContainerStyle={{minHeight:'100%'}}>
+                    <View style={listItem}>
+                        <View style={displayImg}>
+                            <Image style={productImg} source={require('../../assets/imgs/product.png')} />
                         </View>
-                    </View>
-                    <Text style={[PlusMinus, remove]}>X</Text>
-                </View>
-                <View style={listItem}>
-                    <View style={displayImg}>
-                        <Image style={productImg} source={require('../../assets/imgs/product.png')} />
-                    </View>
-                    <View style={detail}>
-                        <Text style={proName}>Product Name</Text>
-                        <Text style={price}>Rs 450/-</Text>
-                        <View style={qty}>
-                            <Text style={PlusMinus}>-</Text>
-                            <TextInput style={qtyInput} placeholder="1"></TextInput>
-                            <Text style={PlusMinus}>+</Text>
+                        <View style={detail}>
+                            <Text style={proName}>Product Name</Text>
+                            <Text style={price}>Rs 800/-</Text>
+                            <View style={qty}>
+                                <Text style={PlusMinus}>-</Text>
+                                <TextInput style={qtyInput} placeholder="2"></TextInput>
+                                <Text style={PlusMinus}>+</Text>
+                            </View>
                         </View>
+                        <Text style={[PlusMinus, remove]}>X</Text>
                     </View>
-                    <Text style={[PlusMinus, remove]}>X</Text>
-                </View>
-                <View style={totalRow}>
-                    <Text style={totalItem}>Total</Text>
-                    <Text style={[totalItem, alignRight]}>Rs 1250/-</Text>
-                </View>
+                    <View style={listItem}>
+                        <View style={displayImg}>
+                            <Image style={productImg} source={require('../../assets/imgs/product.png')} />
+                        </View>
+                        <View style={detail}>
+                            <Text style={proName}>Product Name</Text>
+                            <Text style={price}>Rs 450/-</Text>
+                            <View style={qty}>
+                                <Text style={PlusMinus}>-</Text>
+                                <TextInput style={qtyInput} placeholder="1"></TextInput>
+                                <Text style={PlusMinus}>+</Text>
+                            </View>
+                        </View>
+                        <Text style={[PlusMinus, remove]}>X</Text>
+                    </View>
+                    <View style={totalRow}>
+                        <Text style={totalItem}>Total</Text>
+                        <Text style={[totalItem, alignRight]}>Rs 1250/-</Text>
+                    </View>
+                </ScrollView>
                 <View style={footer}>
-                    <Text style={btnCheckout}>CHECKOUT</Text>
+                    <Text style={btn}>CHECKOUT</Text>
                 </View>
             </View>
 
@@ -66,8 +68,8 @@ const styles = StyleSheet.create({
     totalRow: {paddingVertical:20, paddingHorizontal:10, backgroundColor:'#4fe5c2', flexDirection:'row'},
     totalItem: {color:'#fff', width:'50%', fontSize:18, },
     alignRight: {textAlign:'right', fontWeight:'bold'},
-    footer: {backgroundColor:'#4fe5c2', flexDirection:'row', padding:20, justifyContent:'center', alignItems:'center', marginTop:10},
-    btnCheckout: {color:'#fff', fontSize:18}
+    footer: {position:'absolute', bottom:0, width:'100%', height:60, justifyContent:'flex-end', backgroundColor:'#fff'},
+    btn: {alignSelf: 'stretch', backgroundColor:'#4fe5c2', color:'#fff', paddingVertical:15, paddingHorizontal:10, textAlign:'center', height:50, justifyContent:'center'},
   });
 
   export default Cart;
