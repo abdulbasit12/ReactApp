@@ -8,8 +8,6 @@ class ProductGridItem extends React.Component {
     render() {
         const {Gridcontainer, gridItem, logo, proName, price, action, icon} = styles;
         return (
-            <View>
-                <Header />
                 <View style={Gridcontainer}>
                     <View style={gridItem}>
                         <Image style={logo} source={require('../../assets/imgs/product.png')} />
@@ -30,13 +28,12 @@ class ProductGridItem extends React.Component {
                         </View>
                     </View>
                 </View>
-            </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
-Gridcontainer: {flex:1, backgroundColor: '#fff', flexDirection:'row', flexWrap:'wrap'},
+Gridcontainer: {backgroundColor: '#fff', flexDirection:'row', flexWrap:'wrap', paddingTop:24},
 gridItem: {borderColor:'#e0e0e0', borderWidth:1, borderLeftWidth:0.5, borderBottomWidth:0.5, borderStyle:'solid', width:'50%', padding:10, justifyContent:'center', alignItems:'center',},
 logo: {height:100, width:100,},
 proName: {marginTop:5, width:'100%', textAlign:'center', fontSize:16, color:'#ddd444', fontWeight:'bold'},

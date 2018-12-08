@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Image, Button, ScrollView, Alert } from 'react-native';
-import ProductGridItem from './ProductGridItem';
+import { StyleSheet, Text, View, TextInput, Image, Button, Alert } from 'react-native';
 
 class Login extends React.Component {
   render() {
