@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import Header from './Header';
 
-class ProductDetail extends React.Component {
+class Home extends React.Component {
     render(){
 
         const {sliderBox, sections, Heading, sliders, footer, btnWishlist, btnCart, mainView} = styles;
@@ -59,4 +59,4 @@ const styles = StyleSheet.create({
 
  });
 
-export default ProductDetail;
+export default Home;
