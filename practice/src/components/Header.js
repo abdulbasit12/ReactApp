@@ -8,7 +8,7 @@ class Header extends React.Component {
 
         return (
             <View style={headerStyle} >
-                <Text style={pagename}>Products</Text>
+                <Text style={pagename}>Home</Text>
             </View>
         );
     }

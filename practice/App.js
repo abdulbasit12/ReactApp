@@ -1,6 +1,6 @@
 //contentContainerStyle={{flex:1}}
 import React from 'react';
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import ProductListItem from './src/components/ProductListItem';
 import ProductGridItem from './src/components/ProductGridItem';
 import Header from './src/components/Header';
@@ -20,6 +20,8 @@ import OrderList from './src/components/OrderList';
 import OrderDetail from './src/components/OrderDetail';
 import Code from './src/components/Code';
 import Home from './src/components/Home';
+import ChangePass from './src/components/ChangePass';
+import Profile from './src/components/Profile';
 
 export default class App extends React.Component {
   render() {
